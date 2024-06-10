@@ -1,30 +1,34 @@
----
+<main class="relative h-screen pt-24 overflow-hidden">
+  <!-- Full background image -->
+  <div
+    class="absolute inset-0 bg-mobile-landing bg-cover md:bg-desktop-landing"
+  >
+  </div>
 
----
-
-<main class="h-screen pt-24 overflow-hidden">
-  <!-- Background with darkening effect -->
-  <div class="absolute inset-0 bg-mobile-landing bg-cover brightness-50"></div>
+  <!-- Full darkening effect (mobile and desktop) -->
+  <div class="absolute inset-0 bg-black bg-opacity-50 md:w-1/2"></div>
 
   <!-- Main content -->
-  <div class="relative flex flex-col gap-5 px-6 justify-start">
+  <div
+    class="relative flex flex-col gap-5 px-6 justify-start md:p-40 max-w-3xl z-10"
+  >
     <div class="flex justify-start">
-      <img class="h-32" src="/images/logoSolaris.svg" />
+      <img class="h-32 md:h-48" src="/images/logoSolaris.svg" />
     </div>
     <h2 class="text-3xl text-white font-semibold">
       On your way to success with consultants you can trust
     </h2>
-    <p class="text-2xl text-white  font-normal">
+    <p class="text-2xl text-white font-normal">
       We work with Asset Managers to successfully deliver strategic change
     </p>
 
-    <div class="flex flex-col gap-2   justify-start">
-      
+    <div class="flex flex-col gap-2 justify-start">
       <button class="p-2 w-40 rounded-lg text-white bg-orange-500"
         >Meet Solaris</button
       >
-
-      <button class="p-2 w w-40 rounded-lg text-white bg-blue-900">Contact us</button>
+      <button class="p-2 w-40 rounded-lg text-white bg-blue-900"
+        >Contact us</button
+      >
     </div>
   </div>
 </main>

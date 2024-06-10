@@ -5,6 +5,9 @@ export default {
     extend: {
       backgroundImage: {
         'mobile-landing': "url('/images/mobileLanding.webp')",
+        'desktop-landing': "url('/images/desktopLanding.webp')",
+        'footer-formTree':"url('/images/formTree.webp')",
+        'fade-white': 'linear-gradient(to top, white, rgba(256,256,256,0))',
       }
     },
   },

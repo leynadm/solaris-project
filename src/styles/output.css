@@ -566,6 +566,10 @@ video {
   inset: 0px;
 }
 
+.z-10 {
+  z-index: 10;
+}
+
 .flex {
   display: flex;
 }
@@ -584,6 +588,18 @@ video {
 
 .w-40 {
   width: 10rem;
+}
+
+.max-w-3xl {
+  max-width: 48rem;
+}
+
+.grid-cols-2 {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.grid-cols-3 {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
 }
 
 .flex-row {
@@ -640,6 +656,11 @@ video {
   border-color: rgb(30 58 138 / var(--tw-border-opacity));
 }
 
+.bg-black {
+  --tw-bg-opacity: 1;
+  background-color: rgb(0 0 0 / var(--tw-bg-opacity));
+}
+
 .bg-blue-900 {
   --tw-bg-opacity: 1;
   background-color: rgb(30 58 138 / var(--tw-bg-opacity));
@@ -655,12 +676,29 @@ video {
   background-color: rgb(249 115 22 / var(--tw-bg-opacity));
 }
 
+.bg-opacity-50 {
+  --tw-bg-opacity: 0.5;
+}
+
 .bg-mobile-landing {
   background-image: url('/images/mobileLanding.webp');
 }
 
+.bg-footer-formTree {
+  background-image: url('/images/formTree.webp');
+}
+
 .bg-cover {
   background-size: cover;
+}
+
+.bg-center {
+  background-position: center;
+}
+
+.object-fill {
+  -o-object-fit: fill;
+     object-fit: fill;
 }
 
 .p-2 {
@@ -674,10 +712,6 @@ video {
 .px-6 {
   padding-left: 1.5rem;
   padding-right: 1.5rem;
-}
-
-.pt-20 {
-  padding-top: 5rem;
 }
 
 .pt-24 {
@@ -735,7 +769,48 @@ video {
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
-.brightness-50 {
-  --tw-brightness: brightness(.5);
-  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
+@media (min-width: 768px) {
+  .md\:grid {
+    display: grid;
+  }
+
+  .md\:h-48 {
+    height: 12rem;
+  }
+
+  .md\:w-1\/2 {
+    width: 50%;
+  }
+
+  .md\:grid-cols-2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .md\:bg-desktop-landing {
+    background-image: url('/images/desktopLanding.webp');
+  }
+
+  .md\:bg-footer-formTree {
+    background-image: url('/images/formTree.webp');
+  }
+
+  .md\:p-40 {
+    padding: 10rem;
+  }
+
+  .md\:pb-40 {
+    padding-bottom: 10rem;
+  }
+
+  .md\:pl-40 {
+    padding-left: 10rem;
+  }
+
+  .md\:pr-40 {
+    padding-right: 10rem;
+  }
+
+  .md\:pt-40 {
+    padding-top: 10rem;
+  }
 }
