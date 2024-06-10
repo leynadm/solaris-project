@@ -4,7 +4,7 @@ export default {
   theme: {
     extend: {
       backgroundImage: {
-        'mobile-landing': "url('/public/images/mobileLanding.webp')",
+        'mobile-landing': "url('/images/mobileLanding.webp')",
       }
     },
   },
